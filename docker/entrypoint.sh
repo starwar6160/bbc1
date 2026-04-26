@@ -8,7 +8,7 @@ if [ ! -e /var/run/sshd ]; then
 fi
 
 # do not detach (-D), log to stderr (-e), passthrough other arguments
-/usr/sbin/sshd -D -e &
+# /usr/sbin/sshd -D -e &
 
 . /root/.pythonenv/bin/activate
 if [ -e /root/bbc1 ]; then
